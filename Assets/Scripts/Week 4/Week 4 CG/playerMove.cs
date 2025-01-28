@@ -6,6 +6,7 @@ public class playerMove : MonoBehaviour
 {
 
     public Transform pirateTransform;
+    //public barrelUIActive isClose;
     Vector2 piratePosition;
     Vector2 movement;
     float speed = 0.03f;
@@ -24,6 +25,10 @@ public class playerMove : MonoBehaviour
         movement.y = Input.GetAxis("Vertical");
 
         pirateTransform.Translate(movement * speed);
+
+
+        //isClose = 
+
 
 
         //attempt 2: getAxis to check for keypress, then manually adding speed times movement direction to each component
