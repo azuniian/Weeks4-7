@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class EnableDisable : MonoBehaviour
 {
+    public AudioSource audioS;
     public GameObject go;
     public SpriteRenderer circleSR;
     public EnableDisable script;
     public Transform circleTransform;
+    public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,16 @@ public class EnableDisable : MonoBehaviour
             go.SetActive(true);
 
             //go.activeInHierarchy
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (!audioS.isPlaying)
+            {
+                //audioS.Play();
+                audioS.PlayOneShot(audioS.clip);
+            }
+            //audioS.clip.length
         }
     }
 }
