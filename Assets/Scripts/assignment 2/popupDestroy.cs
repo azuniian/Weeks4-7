@@ -15,10 +15,10 @@ public class popupDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(closePressed == true)
+        if(closePressed == true) //check if spawner script says to close the popup
         {
-            Destroy(gameObject);
-            closePressed = false;
+            Destroy(gameObject); //destroy the popup prefab
+            closePressed = false; //turn the boolean to false so it can be re-used
         }
     }
 }

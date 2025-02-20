@@ -6,9 +6,8 @@ using UnityEngine;
 public class popupSpawn : MonoBehaviour
 {
     public GameObject popup;
-    public Boolean buttonOpen;
-    public Boolean buttonClose;
     public popupDestroy destroy;
+    public Boolean isOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -17,30 +16,32 @@ public class popupSpawn : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if (buttonOpen == true)
-        {
-            Open();
-            buttonOpen = false;
-        }
-
-        else if(buttonClose == true)
-        {
-            Close();
-            buttonClose = false;
-        }
+        
     }
 
-    void Open()
+    public void Open() //open the application
     {
-        GameObject newPopup = Instantiate(popup);
-        destroy = newPopup.GetComponent<popupDestroy>();
+        //check if the popup is already open
+        if(isOpen == true) //yes
+        {
+            //do not open another tab
+        }
+
+        else //no
+        {
+            GameObject newPopup = Instantiate(popup); //create popup
+            destroy = newPopup.GetComponent<popupDestroy>(); //get a component from the destroy script to allow for this script to also destroy
+            isOpen = true; //ensure the same popup can't be opened again
+        }
+        
 
     }
 
-    void Close()
+    public void Close() //close the application
     {
-        destroy.closePressed = true;
+        destroy.closePressed = true; //reference variable in destroy script
+        isOpen = false; //allows for popup to be opened again
     }
 }
