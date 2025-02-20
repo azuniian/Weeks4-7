@@ -345,7 +345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8550819369994954}
-  - component: {fileID: -3865564022923299751}
+  - component: {fileID: 6284710695255507981}
   m_Layer: 0
   m_Name: popup
   m_TagString: Untagged
@@ -375,7 +375,7 @@ Transform:
   - {fileID: 3912748822724528072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3865564022923299751
+--- !u!114 &6284710695255507981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6525634639004975904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5838f373c59538445aae27a421e18e93, type: 3}
+  m_Script: {fileID: 11500000, guid: 60d089385ae955749b85106a7da7af0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6958011634296775877
