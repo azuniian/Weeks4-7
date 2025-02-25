@@ -4,13 +4,15 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using JetBrains.Annotations;
 
 public class colourDropdown : MonoBehaviour
 {
-    public TMP_Dropdown dropdown;
+    //public TMP_Dropdown dropdown;
     public SpriteRenderer background;
     public Image previewColour;
     public Boolean savePressed;
+    public int currentIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +29,13 @@ public class colourDropdown : MonoBehaviour
 
     public void colourChange(int listIndex)
     {
+        currentIndex = listIndex; //to send to save state change script to set background on click
+
         if (listIndex == 0)
         {
             if(savePressed == true)
             {
-                background.color = new Color(0.05098039f, 0.5058824f, 0.5019608f);
+                //background.color = new Color(0.05098039f, 0.5058824f, 0.5019608f);
                 savePressed = false;
             }
             previewColour.color = new Color(0.05098039f, 0.5058824f, 0.5019608f);
@@ -41,7 +45,7 @@ public class colourDropdown : MonoBehaviour
         {
             if(savePressed == true)
             {
-                background.color = new Color(0.455263f, 0.36076f, 0.6320754f);
+                //background.color = new Color(0.455263f, 0.36076f, 0.6320754f);
                 savePressed = false;
             }
             previewColour.color = new Color(0.455263f, 0.36076f, 0.6320754f);
@@ -51,7 +55,7 @@ public class colourDropdown : MonoBehaviour
         {
             if(savePressed == true)
             {
-                background.color = new Color(0.250445f, 0.6461223f, 0.7924528f);
+                //background.color = new Color(0.250445f, 0.6461223f, 0.7924528f);
                 savePressed = false;
             }
             previewColour.color = new Color(0.250445f, 0.6461223f, 0.7924528f);
@@ -61,7 +65,7 @@ public class colourDropdown : MonoBehaviour
         {
             if(savePressed == true)
             {
-                background.color = new Color(255, 255, 255);
+                //background.color = new Color(255, 255, 255);
                 savePressed = false;
             }
             previewColour.color = new Color(255, 255, 255);
@@ -71,7 +75,7 @@ public class colourDropdown : MonoBehaviour
         {
             if (savePressed == true)
             {
-                background.color = new Color(0, 0, 0);
+                //background.color = new Color(0, 0, 0);
                 savePressed = false;
             }
             previewColour.color = new Color(0, 0, 0);
@@ -79,7 +83,7 @@ public class colourDropdown : MonoBehaviour
 
         else
         {
-            background.color = new Color(0.05098039f, 0.5058824f, 0.5019608f);
+            //background.color = new Color(0.05098039f, 0.5058824f, 0.5019608f);
             previewColour.color = new Color(0.05098039f, 0.5058824f, 0.5019608f);
         }
        

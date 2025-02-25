@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.09667328}
   m_AnchorMax: {x: 1, y: 0.09667328}
-  m_AnchoredPosition: {x: -97.72998, y: 71.45137}
-  m_SizeDelta: {x: 176.7388, y: 113.5027}
+  m_AnchoredPosition: {x: -153, y: 105.15599}
+  m_SizeDelta: {x: 253.4515, y: 175.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8073579476663248425
 CanvasRenderer:
@@ -136,7 +136,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &2237926033858168324
 MonoBehaviour:
@@ -150,11 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
