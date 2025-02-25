@@ -6,6 +6,8 @@ using UnityEngine;
 public class popupDestroy : MonoBehaviour
 {
     public Boolean closePressed;
+    
+
     // Start is called before the first frame update
     void Start()
     {
